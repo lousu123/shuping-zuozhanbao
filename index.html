@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>书萍小屋 · 面谈作战包（适配清单 / 演示脚本 / 竞品问答）</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#fdf8f2;padding:20px 16px 60px;color:#1a1a2e}
+.container{max-width:540px;margin:0 auto;background:#fff;border-radius:20px;padding:28px 20px 32px;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
+.badge{display:inline-block;background:#b45309;color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:12px}
+h1{font-size:23px;font-weight:800;line-height:1.3;color:#78350f;margin-bottom:2px}
+h2{font-size:18px;font-weight:700;color:#78350f;margin:26px 0 12px;padding-bottom:8px;border-bottom:2px solid #fde68a}
+h3{font-size:15px;font-weight:700;color:#92400e;margin:16px 0 8px}
+.sub{font-size:14px;color:#666;margin-bottom:16px;line-height:1.6}
+.info{background:#fffbeb;border-radius:16px;padding:18px;margin-bottom:16px;border-top:4px solid #b45309}
+.info .name{font-size:20px;font-weight:800;color:#78350f}
+.info .detail{font-size:13px;color:#666;margin-top:4px;line-height:1.8}
+.tag{display:inline-block;background:#fef3c7;color:#92400e;font-size:11px;padding:2px 10px;border-radius:10px;margin:4px 2px 0 0;font-weight:500}
+.q-block{background:#fafafa;border-radius:14px;padding:16px;margin:12px 0}
+.q-block p{font-size:14px;line-height:1.8;color:#374151}
+.q-block p+p{margin-top:8px}
+.table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px;border-radius:10px;overflow:hidden}
+.table th{background:#b45309;color:#fff;padding:8px 12px;text-align:left;font-weight:500;font-size:13px}
+.table td{padding:8px 12px;border-bottom:1px solid #fde68a;color:#1f2937;font-size:13px;vertical-align:top}
+.table tr:nth-child(even){background:#fffbeb}
+.highlight-box{background:#fffbeb;border-left:4px solid #b45309;border-radius:0 14px 14px 0;padding:14px 16px;margin:12px 0}
+.highlight-box p{font-size:14px;color:#78350f;line-height:1.7}
+.step{background:#fff;border:1px solid #fde68a;border-radius:14px;padding:14px 16px;margin:10px 0}
+.step .st-title{font-size:15px;font-weight:700;color:#92400e;margin-bottom:4px}
+.step .st-meta{font-size:11px;color:#b45309;margin-bottom:6px}
+.step p{font-size:13px;color:#374151;line-height:1.7}
+.step p+p{margin-top:6px}
+.rank{display:inline-block;background:#b45309;color:#fff;font-size:11px;font-weight:700;width:20px;height:20px;line-height:20px;text-align:center;border-radius:50%;margin-right:6px}
+.qt{font-size:14px;font-weight:700;color:#92400e;margin-bottom:6px}
+.ans{background:#f0fdf4;border-left:3px solid #15803d;border-radius:0 10px 10px 0;padding:10px 12px;margin:6px 0}
+.ans p{font-size:13px;color:#166534;line-height:1.7}
+.no{background:#fef2f2;border-left:3px solid #dc2626;border-radius:0 10px 10px 0;padding:10px 12px;margin:6px 0}
+.no p{font-size:13px;color:#991b1b;line-height:1.7}
+.ok-badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-right:6px}
+.ok1{background:#dcfce7;color:#166534}
+.ok2{background:#fef3c7;color:#92400e}
+.ok3{background:#fee2e2;color:#991b1b}
+.footnote{font-size:12px;color:#999;text-align:center;margin-top:20px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="badge">🤝 面谈作战包 · 书萍小屋</div>
+
+<div class="info">
+<div class="name">书萍小屋 · 李哥（李喜鑫）</div>
+<div class="detail">
+咸水沽镇二八公路与津南大道交叉口东南角<br>
+📍 融合菜·川菜 · 首次餐饮创业 · 线下保利润、线上做增量<br>
+💰 现有报价：软件 3650/年 + 收银主机 1000 + 打印机 200 = 4850
+</div>
+<div>
+<span class="tag">🍜 融合菜·川菜</span>
+<span class="tag">🎯 价值敏感</span>
+<span class="tag">📊 要看真实案例</span>
+<span class="tag">🔄 正在比价商米</span>
+</div>
+</div>
+
+<div class="highlight-box">
+<p><strong>这次面谈的主线只有一句：</strong>不谈功能多少，只谈"这家店用什么、能带来什么"。他刚从商米那边回来，兜里装着那边的报价。你要给他的不是一个更便宜的价，而是一把能对照的尺子。</p>
+</div>
+
+<h2>一、功能适配清单（做减法用）</h2>
+<div class="q-block">
+<p>给李哥看的核心就是一页纸：什么是开业必须的、什么是第一期值得上的、什么是现在不用买的。这张表就是"不推销冗余功能"的证明。</p>
+</div>
+
+<h3>✅ 必须（开业就得有）</h3>
+<table class="table">
+<tr><th>模块</th><th>解决什么</th><th>价格</th></tr>
+<tr><td>主收银系统</td><td>收银、点餐、结账，团购核销、外卖接单一个后台</td><td>软件年费 3,650</td></tr>
+<tr><td>收银主机</td><td>前台收银台，日常开单结账</td><td>1,000</td></tr>
+<tr><td>打印机 ×2</td><td>前台小票 + 后厨出单，缺一个高峰期就乱</td><td>200</td></tr>
+</table>
+
+<h3>🟡 建议（第一期上，直接带来收益）</h3>
+<table class="table">
+<tr><th>模块</th><th>解决什么</th><th>说明</th></tr>
+<tr><td>会员营销</td><td>结账即会员、储值、发券、复购唤醒</td><td>快餐店复购是命，这个必须有</td></tr>
+<tr><td>扫码点餐</td><td>高峰期顾客自己点单，前台不堵</td><td>快餐简餐最直接的提效</td></tr>
+<tr><td>小程序</td><td>引导入会 + 预点餐自提，避开平台佣金</td><td>看门店是否需要线上自提</td></tr>
+<tr><td>外卖接单</td><td>美团外卖/京东/淘宝订单自动进后厨</td><td>要上外卖就必须配</td></tr>
+</table>
+
+<h3>⚪ 暂时不用（现在别买）</h3>
+<table class="table">
+<tr><th>模块</th><th>为什么现在不需要</th></tr>
+<tr><td>连锁管理系统</td><td>单店阶段用不上，等第二家店再说</td></tr>
+<tr><td>门店进销存 / 成本精细化</td><td>快餐 SKU 少，手工就能管，先不铺</td></tr>
+<tr><td>智能预订 / 排队 / 桌台管理</td><td>快餐简餐没有包间宴请场景</td></tr>
+<tr><td>KDS 控菜大屏</td><td>后厨规模小，出单机够用</td></tr>
+<tr><td>行业洞察（5.8 万/年）</td><td>单店用不上，投入产出不匹配</td></tr>
+<tr><td>商圈选址</td><td>店已经开了，不需要</td></tr>
+</table>
+
+<div class="highlight-box">
+<p><strong>面谈时可以直接说：</strong>"这张表里打叉的，你今天不用买。等你开到第二家、后厨变复杂了，再回来找我加，价格一样。"</p>
+</div>
+
+<h2>二、现场演示脚本（60-75 分钟）</h2>
+
+<div class="step">
+<div class="st-title"><span class="rank">0</span>开场：先接住商米之行</div>
+<div class="st-meta">10 分钟 · 让他先说，你只听</div>
+<p>他今天先去了商米，一定带着对比和疑问来。先问三句：</p>
+<p>① "商米那边看得怎么样？给您演示了哪些？"<br>
+② "它那个会员和营销软件，是它自研的还是接第三方的？您问了没？"<br>
+③ "开业活动它说能帮您做，具体怎么个做法？"</p>
+<p><strong>目的：</strong>先听完他的所见所闻，你才知道往哪打。他讲得越多，后面你的尺子越准。</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">1</span>亮能力：开业 30 天策划日历</div>
+<div class="st-meta">10 分钟 · 回应"策划能力牛不牛逼"（他亲口说：能力牛逼直接干）</div>
+<p>甩出 A4 打印版《书萍小屋开业前30天策划日历》，从左往右讲六阶段：</p>
+<p>① 蓄水期(D-30~D-15)：小程序占位免费先抢、点评认领、菜单三档（19.9-29.9引流/58-88双人/128-188聚餐）<br>
+② 预热期(D-14~D-8)：团购3档上架（带店名+含招牌锅底）、围挡海报预告、学生群预热<br>
+③ 预售期(D-7~D-1)：<strong>99元"开学礼"预售（3张券），目标锁100个学生会员</strong>、抖音探店1条、小红书3篇<br>
+④ 开业爆发(D-0~D+3)：集赞/学生证优惠/打卡、扫码点餐全流程、首批评价引导、储值加码<br>
+⑤ 口碑期(D+4~D+14)：二次到店券、差评48小时处理、入会转化目标30%<br>
+⑥ 稳定期(D+15~D+30)：数据复盘（扫码占比/会员转化/储值渗透）、外卖优化、代运营评估、第二家店规划</p>
+<p>说："李哥，您说要看看策划能力——这就是按您家店定的30天日历，每天做什么、目标多少都排好了。每一格后面，都有系统的一个功能撑着，我一个个给您看。"</p>
+<p><strong>不要做的：</strong>一坐下就打开后台演示功能。先亮日历，让他看到你的策划能力，再进产品。</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">2</span>演示①：结账即会员</div>
+<div class="st-meta">3 分钟 · 回应"会员能不能落地"</div>
+<p>现场扫一次码、结一笔账，让他看到会员自动建档：姓名、电话、消费记录、第几次来，全部自动进后台。</p>
+<p>说："你的顾客不是不办会员，是懒得填表。结账这一下顺手就进来了，不用他做任何动作。"</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">3</span>演示②：开业活动配置</div>
+<div class="st-meta">5 分钟 · 回应"开业策划能不能落地"</div>
+<p>现场配一个活动：新客立减 + 满减 + 招牌引流款，三分钟配完，当场看效果预览。</p>
+<p>说："开业活动不用找外包，你自己在这个后台就能配。我教你一次，后面所有活动你都能自己上。"</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">4</span>演示③：外卖账单拆解</div>
+<div class="st-meta">5 分钟 · 他最在意的点</div>
+<p>打开账单明细，逐项解释：技术服务费、配送费、活动补贴、推广扣费分别多少，哪一项可以调、怎么调。</p>
+<p>说："很多人以为外卖亏在佣金，其实是活动补贴和推广费没算清楚。这个表格能让你知道每一单到底赚多少。"</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">5</span>演示④：小程序与自提</div>
+<div class="st-meta">5 分钟 · 回应"私域沉淀"</div>
+<p>展示小程序点单、预点餐自提，以及下单后自动进会员池的链路。</p>
+<p>说："平台来的客，最后要能落到你自己的池子里。不然每次做活动都在给平台交学费。"</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">6</span>演示⑤：数据看板</div>
+<div class="st-meta">3 分钟 · 回应"看得见效果"</div>
+<p>只讲四个数：单量、客单价、复购率、会员数。说："你每天只看这四个数，就知道店在变好还是变差。"</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">7</span>报价：拆开给他勾</div>
+<div class="st-meta">10 分钟 · 回应"怕买错"</div>
+<p>先把口径钉死：<strong>4850 就是全包固定价</strong>（软件年费 3650 含会员、营销、小程序打通 + 收银机 1000 + 打印机 200），不拆、不加、无隐形消费。</p>
+<p>说："4850 是开店必需的整套，会员、小程序、外卖都在里面了。真正可选的是另一项——官方代运营服务，帮您做点评、抖音的线上运营，那个今天不用定，您想了解我给您看案例。"</p>
+</div>
+
+<div class="step">
+<div class="st-title"><span class="rank">8</span>收口：只要一个动作</div>
+<div class="st-meta">5 分钟 · 不逼单</div>
+<p>说："今天不用定。商米那边您也看了，两边的报价放一起对。我这份适配清单您拿着，回去对照就行。"</p>
+<p><strong>这一步是加分项：</strong>不逼单、给对照工具，他会记住你比其他销售坦荡。</p>
+</div>
+
+<h2>三、竞品对比问答卡（商米 / 商米）</h2>
+<div class="q-block">
+<p>原则：<strong>不贬低竞品，只讲差异。</strong>李哥会自己去验证，你说竞品坏话反而减分。</p>
+</div>
+
+<div class="step">
+<div class="qt">Q1：商米便宜，你们贵在哪？</div>
+<div class="ans">
+<p>"便宜的部分通常在软件深度。同样是收银机，能不能把结账的人变成会员、能不能自动唤醒老客、外卖账单能不能拆到每一项——这些是差价所在。你可以把两边的功能清单并排看，缺哪一项，后面补的时候是什么成本。"</p>
+</div>
+<div class="no">
+<p>❌ 不要说"他们家系统不行"。</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q2：你们的会员和营销是自己研发的吗？</div>
+<div class="ans">
+<p>"是美团自己的产品线，和收银、外卖、团购是同一套后台打通的。好处是数据不用来回导，坏处是只能在美团生态里用——这一点我提前跟你讲清楚。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q3：开业活动你们能帮做吗？商米说也能。</div>
+<div class="ans">
+<p>"能，而且分两层：工具层，你自己在后台配活动；落地层，我帮你把开业那波的活动节奏和物料一起过一遍。你先看我的案例，觉得能做到再谈。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q4：我只想要收银，不想要会员，行不行？</div>
+<div class="ans">
+<p>"行。收银是必选，会员是增值，你可以先不上。但提醒一句：快餐店老客复购占大头，会员这块晚上一个月，就少攒一个月的客人。你自己权衡。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q5：你们能保证带来多少客流？</div>
+<div class="ans">
+<p>"不能保证具体数字，谁跟你保证都是画饼。我能保证的是：工具让你看得见每个渠道来了多少人、花了多少钱、留下多少人。数字好不好，要看活动怎么设计、产品接不接得住。"</p>
+</div>
+<div class="no">
+<p>❌ 绝对不要承诺"保证带来 XX 客流"。</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q6：系统坏了怎么办？</div>
+<div class="ans">
+<p>"400 热线是 7×24 的，收银断网也能先离线开单。真出问题，我这边也能直接找到人，不用你打一圈电话。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q7：费率会不会以后偷偷涨？</div>
+<div class="ans">
+<p>"费率写在合同里，按合同执行。你担心的那种情况，多发生在非正规代理改后台，官方直签不会有这个问题。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q8：以后想加功能，会不会很贵？</div>
+<div class="ans">
+<p>"按标准价格加，不会因为你是老客户就涨价。而且我建议你第一期别把钱花满，留出后面加的空间。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q9：我开第二家店怎么办？</div>
+<div class="ans">
+<p>"第一家的数据、会员、菜单都能复制。到那一步再上连锁管理，现在不用提前买。"</p>
+</div>
+</div>
+
+<div class="step">
+<div class="qt">Q10：你能给我看跟我一样的店吗？</div>
+<div class="ans">
+<p>"我给你找快餐简餐的，不是景区店也不是茶饮店。同业态、同规模的数据才有参考价值。"</p>
+</div>
+<div class="no">
+<p>⚠️ 提前准备好 1-2 个快餐简餐类真实案例，这是这次面谈最硬的底牌。</p>
+</div>
+</div>
+
+<div class="highlight-box">
+<p><strong>面谈前最后检查：</strong>① 快餐类案例准备好了吗？② 适配清单打印了吗？③ 后台演示账号登录好了吗？④ 报价能不能拆成必选/增值？四样齐了再出门。</p>
+</div>
+
+<div class="footnote">
+本作战包基于书萍小屋沟通记录整理，价格与功能以当期政策为准
+</div>
+</div>
+</body>
+</html>
